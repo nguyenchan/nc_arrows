@@ -5,11 +5,21 @@
   body {
     margin: 0;
     font-family: Arial;
+    background-color: #dcdcdc;
   }
   
   .header {
     text-align: center;
     padding: 32px;
+    background-color: black;
+    color: #dcdcdc;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+  }
+
+  .logo {
+    width: 150px;
   }
   
   .row {
@@ -37,11 +47,12 @@
 
   .column img.med {
       border: 2px solid #ff0000;
+      border-radius: 20px;
   } 
 
   .column img.hig {
-    border: 5px solid #ffff00;
-    border-radius: 10%;
+    border: 3px solid #ffff00;
+    border-radius: 20px;
 } 
   
   /* Responsive layout - makes a two column-layout instead of four columns */
@@ -50,6 +61,14 @@
       -ms-flex: 50%;
       flex: 50%;
       max-width: 50%;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100px;
     }
   }
   
@@ -61,3 +80,39 @@
       max-width: 100%;
     }
   }
+
+  /*==================================================
+ * Effect 8
+ * ===============================================*/
+.effect8
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
