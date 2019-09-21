@@ -1,59 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="./icon/logo_indigo.ico">
-    <link rel="stylesheet" href="style.css">
-    <title>The Arrows</title>
-</head>
-<body>
-    <!-- Header -->
-    <div class="header">
-        <img class="logo" src="./indigo_logo.png" alt="archeryvn_logo">
-        <h1>The Arrows</h1>
-        <p>Traditional arrow components</p>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img src="./tube/t1.PNG">
-            <img src="./tube/t2.PNG">
-            <img src="./tube/t3.PNG">
-            <img src="./fletch/f3.PNG">
-            <img src="./fletch/f4.PNG">
-            <img src="./fletch/f5.PNG">
-            <img src="./fletch/f7.PNG">
-            <img src="./fletch/f8.PNG">
-            <img src="./fletch/f9.PNG">
-            <img src="./fletch/f10.PNG">
-        </div>
-        <div class="column">
-            <img class="med effect8" src="./tube/t4.PNG">
-            <img class="med effect8" src="./tube/t5.jpg">
-            <img src="./fletch/f1.PNG">
-            <img src="./fletch/f2.PNG">
-            <img src="./fletch/f6.PNG">
-            <img class="hig effect8" src="./fletch/f11.PNG">
-            <img class="hig effect8" src="./fletch/f12.PNG">
-            <img class="hig effect8" src="./fletch/f13.PNG">
-            <img class="hig effect8" src="./fletch/f14.jpg">
-        </div>
-        <div class="column"> 
-            <img src="./head/h1.PNG">
-            <img src="./head/h2.PNG">
-            <img src="./head/hi1.PNG">
-            <img class="med effect8" src="./head/hi2.PNG">
-            <img class="med effect8" src="./head/h3.PNG">
-            <img class="med effect8" src="./head/h4.PNG">
-            <img class="hig effect8" src="./head/h5.PNG">
-        </div>
-        <div class="column">   
-            <img src="./nock/n1.PNG">
-            <img src="./nock/n2.PNG">
-            <img class="med effect8" src="./nock/n3.PNG">
-            <img class="hig effect8" src="./nock/n4.PNG">
-        </div>
-      </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="icon" href="./icon/logo_indigo.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./image-picker/image-picker.css" />
+		<title>The Arrows</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<div class="header">
+			<img class="logo" src="./indigo_logo.png" alt="archeryvn_logo" />
+			<h1>The Arrows</h1>
+			<p>Traditional arrow components</p>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<img src="./tube/t1.PNG" />
+				<img src="./tube/t2.PNG" />
+				<img src="./tube/t3.PNG" />
+				<img src="./fletch/f3.PNG" />
+				<img src="./fletch/f4.PNG" />
+				<img src="./fletch/f5.PNG" />
+				<img src="./fletch/f7.PNG" />
+				<img src="./fletch/f8.PNG" />
+				<img src="./fletch/f9.PNG" />
+				<img src="./fletch/f10.PNG" />
+			</div>
+			<div class="column">
+				<img class="med effect8" src="./tube/t4.PNG" />
+				<img class="med effect8" src="./tube/t5.jpg" />
+				<img src="./fletch/f1.PNG" />
+				<img src="./fletch/f2.PNG" />
+				<img src="./fletch/f6.PNG" />
+				<img class="hig effect8" src="./fletch/f11.PNG" />
+				<img class="hig effect8" src="./fletch/f12.PNG" />
+				<img class="hig effect8" src="./fletch/f13.PNG" />
+				<img class="hig effect8" src="./fletch/f14.jpg" />
+			</div>
+			<div class="column">
+				<img src="./head/h1.PNG" />
+				<img src="./head/h2.PNG" />
+				<img src="./head/hi1.PNG" />
+				<img class="med effect8" src="./head/hi2.PNG" />
+				<img class="med effect8" src="./head/h3.PNG" />
+				<img class="med effect8" src="./head/h4.PNG" />
+				<img class="hig effect8" src="./head/h5.PNG" />
+			</div>
+			<div class="column">
+				<img src="./nock/n1.PNG" />
+				<img src="./nock/n2.PNG" />
+				<img class="med effect8" src="./nock/n3.PNG" />
+				<img class="hig effect8" src="./nock/n4.PNG" />
+			</div>
+		</div>
+
+		<div class="dev-form">
+			<select id="selectImage" class="image-picker show-labels show-html">
+				<option
+					data-img-label="Awww"
+					data-img-src="http://placekitten.com/220/200"
+					value="1"
+					>Cute Kitten 1</option
+				>
+				<option
+					data-img-label="Yeah"
+					data-img-src="http://placekitten.com/180/200"
+					value="2"
+					>Cute Kitten 2</option
+				>
+				<option
+					data-img-label="Ohai"
+					data-img-src="http://placekitten.com/130/200"
+					value="3"
+					>Cute Kitten 3</option
+				>
+				<option
+					data-img-label="Plop"
+					data-img-src="http://placekitten.com/270/200"
+					value="4"
+					>Cute Kitten 4</option
+				>
+			</select>
+		</div>
+
+		<div class="picker">
+			<select class="image-picker show-labels show-html">
+				<option
+					data-img-label="Awww"
+					data-img-src="http://placekitten.com/220/200"
+					value="1"
+					>Cute Kitten 1</option
+				>
+				<option
+					data-img-label="Yeah"
+					data-img-src="http://placekitten.com/180/200"
+					value="2"
+					>Cute Kitten 2</option
+				>
+				<option
+					data-img-label="Ohai"
+					data-img-src="http://placekitten.com/130/200"
+					value="3"
+					>Cute Kitten 3</option
+				>
+				<option
+					data-img-label="Plop"
+					data-img-src="http://placekitten.com/270/200"
+					value="4"
+					>Cute Kitten 4</option
+				>
+			</select>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="./image-picker/image-picker.js"></script>
+		<script src="./image-picker/image-picker.min.js"></script>
+		<script>
+			$("picker").imagepicker();
+			$(document).ready(function() {
+				$("#selectImage").imagepicker({
+					hide_select: false
+				});
+
+				var $container = $(".image_picker_selector");
+				// initialize
+			});
+		</script>
+	</body>
 </html>
