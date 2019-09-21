@@ -128,7 +128,7 @@ body {
 }
 
 .dev-form {
-	height: 50vh;
+	margin: 20px 10px;
 }
 
 img.form {
@@ -136,6 +136,7 @@ img.form {
 	vertical-align: middle;
 	width: 100%;
 	max-width: 250px;
+	max-height: 250px;
 	border: 1px solid black;
 }
 
@@ -154,4 +155,33 @@ li.form {
 	-webkit-box-shadow: 0 10px 6px -6px #777;
 	-moz-box-shadow: 0 10px 6px -6px #777;
 	box-shadow: 0 10px 6px -6px #777;
+}
+
+.btn_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn_container > button {
+	text-align: center;
+	background: #00acee;
+	width: 120px;
+	height: 40px;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.btn_container > button:hover {
+	box-shadow: none;
+	border: 1px solid #ffff00;
+	color: #ffff00;
+}
+
+.image-picker {
+	height: 2.5em;
 }

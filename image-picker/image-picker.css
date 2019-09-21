@@ -39,5 +39,7 @@ ul.thumbnails.image_picker_selector li .thumbnail img {
 }
 /* line 48, source/sass/image-picker.scss */
 ul.thumbnails.image_picker_selector li .thumbnail.selected {
-	background: #00ef00;
+	background: #000;
+	color: #dcdcdc;
+	border: 2px solid #00acee;
 }
