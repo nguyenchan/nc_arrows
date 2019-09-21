@@ -1,118 +1,128 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial;
-    background-color: #dcdcdc;
-  }
-  
-  .header {
-    text-align: center;
-    padding: 32px;
-    background-color: black;
-    color: #dcdcdc;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
-  }
+	box-sizing: border-box;
+}
 
-  .logo {
-    width: 150px;
-  }
-  
-  .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    border: 1px solid black;
-  }
+body {
+	margin: 0;
+	font-family: Arial;
+	background-color: #dcdcdc;
+}
 
-  .column img.med {
-      border: 2px solid #ff0000;
-      border-radius: 20px;
-  } 
+.header {
+	text-align: center;
+	padding: 32px;
+	background-color: black;
+	/* background: url(./0p_gif.gif) no-repeat center center; */
+	background-image: url(./cover.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* animation-iteration-count: infinite;
+	animation: animatedBackground 40s linear infinite; */
+	color: #dcdcdc;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
 
-  .column img.hig {
-    border: 3px solid #ffff00;
-    border-radius: 20px;
-} 
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
+.logo {
+	width: 150px;
+}
 
-    .header {
-        padding: 10px;
-    }
+.row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
 
-    .logo {
-        width: 100px;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+/* Create four equal columns that sits next to each other */
+.column {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
 
-  /*==================================================
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	border: 1px solid black;
+}
+
+.column img.med {
+	border: 2px solid #ff0000;
+	border-radius: 20px;
+}
+
+.column img.hig {
+	border: 3px solid #ffff00;
+	border-radius: 20px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+	.column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+
+	.header {
+		padding: 10px;
+	}
+
+	.logo {
+		width: 100px;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+/*==================================================
  * Effect 8
  * ===============================================*/
-.effect8
-{
-    position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+.effect8 {
+	position: relative;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+		0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+		0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-.effect8:before, .effect8:after
-{
-    content:"";
-    position:absolute;
-    z-index:-1;
-    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:10px;
-    bottom:10px;
-    left:0;
-    right:0;
-    -moz-border-radius:100px / 10px;
-    border-radius:100px / 10px;
+.effect8:before,
+.effect8:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	top: 10px;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	-moz-border-radius: 100px / 10px;
+	border-radius: 100px / 10px;
 }
-.effect8:after
-{
-    right:10px;
-    left:auto;
-    -webkit-transform:skew(8deg) rotate(3deg);
-       -moz-transform:skew(8deg) rotate(3deg);
-        -ms-transform:skew(8deg) rotate(3deg);
-         -o-transform:skew(8deg) rotate(3deg);
-            transform:skew(8deg) rotate(3deg);
+.effect8:after {
+	right: 10px;
+	left: auto;
+	-webkit-transform: skew(8deg) rotate(3deg);
+	-moz-transform: skew(8deg) rotate(3deg);
+	-ms-transform: skew(8deg) rotate(3deg);
+	-o-transform: skew(8deg) rotate(3deg);
+	transform: skew(8deg) rotate(3deg);
 }
