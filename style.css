@@ -158,25 +158,27 @@ img.form {
 	width: 100%;
 	max-width: 250px;
 	max-height: 250px;
-	border: 1px solid black;
+	/* border: 1px solid black; */
+	border-radius: 10px;
 }
 
 img.med {
 	border: 2px solid #ff0000;
-	border-radius: 20px;
+	/* border-radius: 20px; */
 }
 
 img.hig {
 	border: 3px solid #ffff00;
-	border-radius: 20px;
+	/* border-radius: 20px; */
 }
 
 li.form {
 	height: 100%;
 	background-color: #fff;
-	-webkit-box-shadow: 0 10px 6px -6px #777;
+	border-radius: 10px;
+	/* -webkit-box-shadow: 0 10px 6px -6px #777;
 	-moz-box-shadow: 0 10px 6px -6px #777;
-	box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777; */
 }
 
 .btn_container {
