@@ -130,3 +130,28 @@ body {
 .dev-form {
 	height: 50vh;
 }
+
+img.form {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	max-width: 250px;
+	border: 1px solid black;
+}
+
+img.med {
+	border: 2px solid #ff0000;
+	border-radius: 20px;
+}
+
+img.hig {
+	border: 3px solid #ffff00;
+	border-radius: 20px;
+}
+
+li.form {
+	background-color: #fff;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
