@@ -264,6 +264,9 @@ li.form {
 	padding: 10px;
 	margin: 10px;
 	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .modal_card:hover {
@@ -278,4 +281,55 @@ li.form {
 	max-height: 250px;
 	/* border: 1px solid black; */
 	border-radius: 10px;
+}
+
+.page {
+	text-decoration: none;
+	color: #ffff00;
+}
+
+#myBtn {
+	display: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #ff0000;
+	color: #fff;
+	box-shadow: none;
+	padding: 0;
+	margin: 10px auto;
+	border: 2px solid #fff;
+	font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+	.modal {
+		padding: 20px 0;
+	}
+
+	.modal-content {
+		max-height: 100%;
+		overflow: scroll;
+	}
+	#myBtn {
+		display: block;
+	}
+}
+
+footer {
+	display: flex;
+	background: #e6f0ff;
+	color: #999;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 32px;
+	text-align: center;
+	text-decoration: none;
+}
+
+p.footer-links > a {
+	text-decoration: none;
+	color: #0a0a0a;
 }

@@ -28,15 +28,32 @@
 						src="./pack/pack_12.PNG"
 						alt="pack_12_arrows"
 					/>
-					<p>Box 12 tên carbon 0.246"</p>
+					<div>
+						<p>Box 12 tên carbon 0.246"</p>
+						<div>1300k/box</div>
+					</div>
 				</div>
 				<div class="modal_card">
 					<img class="modal_img" src="./pack/modal1.jpg" alt="trad_arrows" />
-					<p>Custom 6 tên carbon 0.246"</p>
+					<div>
+						<p>Custom pack 6 tên carbon 0.246"</p>
+						<div>900k/pack</div>
+					</div>
 				</div>
 				<div class="modal_card">
-					<img class="modal_img" src="./pack/modal2.jpg" alt="trad_arrows" />
-					<p>Custom 6 tên carbon 0.246"</p>
+					<img class="modal_img" src="./pack/modal5.jpg" alt="trad_arrows" />
+					<div>
+						<p>Custom theo yêu cầu</p>
+						<div
+							>Liên hệ
+							<a
+								class="page"
+								href="https://www.facebook.com/traditionalbow.archeryvn"
+								target="_blank"
+								>Archeryvn</a
+							></div
+						>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -309,6 +326,22 @@
 			</div>
 		</form>
 
+		<button id="myBtn">+</button>
+
+		<footer>
+			<p class="footer-links">
+				<a href="https://archeryvn.com/" target="_blank">Archeryvn</a
+				><span> / </span
+				><a href="https://www.facebook.com/TradArcheryVN/" target="_blank"
+					>Cung Thuật truyền thống VN</a
+				><span> / </span
+				><a href="https://www.facebook.com/477569523053117" target="_blank"
+					>Cung Tên Truyền Thống
+				</a>
+			</p>
+			<p>© 2019 <strong>Archeryvn</strong> - Traditional Archery Supplies</p>
+		</footer>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<!-- <script src="./image-picker/image-picker.js"></script> -->
 		<script src="./image-picker/image-picker.min.js"></script>
@@ -337,7 +370,7 @@
 			});
 			//ester egg
 			const pressed = [];
-			const secretCode = "aaa";
+			const secretCode = "nguyen";
 			window.addEventListener("keyup", e => {
 				pressed.push(e.key);
 				pressed.splice(
@@ -356,15 +389,15 @@
 			var modal = document.getElementById("myModal");
 
 			// Get the button that opens the modal
-			// var btn = document.getElementById("myBtn");
+			var btn = document.getElementById("myBtn");
 
 			// Get the <span> element that closes the modal
 			var span = document.getElementsByClassName("close")[0];
 
 			// When the user clicks the button, open the modal
-			// btn.onclick = function() {
-			// 	modal.style.display = "block";
-			// };
+			btn.onclick = function() {
+				modal.style.display = "block";
+			};
 
 			// When the user clicks on <span> (x), close the modal
 			span.onclick = function() {
