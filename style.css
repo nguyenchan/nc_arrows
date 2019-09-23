@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	font-family: Arial;
-	background-color: #dcdcdc;
+	background-color: #fff;
 }
 
 .header {
@@ -23,9 +23,9 @@ body {
 	/* animation-iteration-count: infinite;
 	animation: animatedBackground 40s linear infinite; */
 	color: #dcdcdc;
-	-webkit-box-shadow: 0 10px 6px -6px #777;
+	/* -webkit-box-shadow: 0 10px 6px -6px #777;
 	-moz-box-shadow: 0 10px 6px -6px #777;
-	box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777; */
 }
 
 .logo {
@@ -163,22 +163,31 @@ img.form {
 }
 
 img.med {
-	border: 2px solid #ff0000;
+	border: 1px solid #ff9999;
 	/* border-radius: 20px; */
 }
 
 img.hig {
-	border: 3px solid #ffff00;
+	border: 1px solid #ffff99;
 	/* border-radius: 20px; */
 }
 
 li.form {
 	height: 100%;
-	background-color: #fff;
+	background-color: #dcdcdc;
 	border-radius: 10px;
+	border: none;
 	/* -webkit-box-shadow: 0 10px 6px -6px #777;
 	-moz-box-shadow: 0 10px 6px -6px #777;
 	box-shadow: 0 10px 6px -6px #777; */
+}
+
+li.med {
+	background: #ff9999;
+}
+
+li.hig {
+	background: #ffff99;
 }
 
 .btn_container {
@@ -191,13 +200,13 @@ li.form {
 .btn_container > button {
 	text-align: center;
 	background: #00acee;
-	width: 120px;
+	width: 100px;
 	height: 40px;
-	-webkit-box-shadow: 0 10px 6px -6px #777;
+	/* -webkit-box-shadow: 0 10px 6px -6px #777;
 	-moz-box-shadow: 0 10px 6px -6px #777;
-	box-shadow: 0 10px 6px -6px #777;
-	border: 1px solid black;
-	border-radius: 5px;
+	box-shadow: 0 10px 6px -6px #777; */
+	border: none;
+	border-radius: 10px;
 }
 
 .btn_container > button:hover {
