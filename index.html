@@ -30,14 +30,14 @@
 						alt="pack_12_arrows"
 					/>
 					<div>
-						<p>Box 12 tên carbon 0.246"</p>
+						<p>Box 12 tên (basic) carbon 0.246"</p>
 						<div>1400k/box</div>
 					</div>
 				</div>
 				<div class="modal_card">
 					<img class="modal_img" src="./pack/modal1.jpg" alt="trad_arrows" />
 					<div>
-						<p>Custom pack 6 tên carbon 0.246"</p>
+						<p>Custom pack 6 tên (light arrows) carbon 0.246"</p>
 						<div>1000k/pack</div>
 					</div>
 				</div>
@@ -103,13 +103,14 @@
 		<form
 			class="dev-form"
 			id="text-form"
-			action="#"
-			target="_self"
+			action="https://docs.google.com/forms/d/e/1FAIpQLSe7AIxIfeGMVO3chide5ZhAwafAwEwUZC_9hiSeBolXXARoxw/formResponse"
+			target="hidden_iframe"
 			method="POST"
+			onsubmit="submitted=true;"
 		>
 			<div class="components_container">
 				<div class="components">
-					<select id="selectImage" class="image-picker show-labels show-html">
+					<select id="selectImage" class="image-picker show-labels show-html" name="entry.1463372125">
 						<option
 							data-img-label="Lông Shield 5inchs trắng"
 							data-img-src="./fletch/f1.PNG"
@@ -211,7 +212,7 @@
 					</select>
 				</div>
 				<div class="components">
-					<select id="selectImage2" class="image-picker show-labels show-html">
+					<select id="selectImage2" class="image-picker show-labels show-html" name="entry.1915785340">
 						<option
 							data-img-label="Carbon 0.246'' gỗ đỏ 30inchs"
 							data-img-src="./tube/t1.PNG"
@@ -250,7 +251,7 @@
 					</select>
 				</div>
 				<div class="components">
-					<select id="selectImage3" class="image-picker show-labels show-html">
+					<select id="selectImage3" class="image-picker show-labels show-html" name="entry.298433002">
 						<option
 							data-img-label="Field point đồng 75grain"
 							data-img-src="./head/h1.PNG"
@@ -289,7 +290,7 @@
 					</select>
 				</div>
 				<div class="components">
-					<select id="selectImage4" class="image-picker show-labels show-html">
+					<select id="selectImage4" class="image-picker show-labels show-html" name="entry.2116709592">
 						<option
 							data-img-label="Nock random 1"
 							data-img-src="./nock/n1.PNG"
@@ -322,10 +323,40 @@
 				</div>
 			</div>
 
+			<div class="rowtab">
+				<div class="label">
+					<label id="name-label" for="entry.541226669">* Your Name: </label>
+				</div>
+				<div class="righttab">
+					<input
+						type="text"
+						name="entry.541226669"
+						id="name"
+						class="input-field"
+						placeholder="your name..."
+						required
+					/>
+				</div>
+				<div class="rowtab">
+					<div class="label">
+						<label id="name-label" for="entry.219414654">* Contact: </label>
+					</div>
+					<div class="righttab">
+						<input
+							type="text"
+							name="entry.219414654"
+							id="name"
+							class="input-field"
+							placeholder="phone/ FB/ email..."
+							required
+						/>
+					</div>
+
 			<div class="btn_container">
-				<button id="postform" type="submit" disabled>Submit order!</button>
+				<button id="postform" type="submit" >Submit order!</button>
 			</div>
 		</form>
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='./success/index.html';}"></iframe>
 
 		<button id="myBtn">+</button>
 
@@ -412,5 +443,6 @@
 				}
 			};
 		</script>
+		<script type="text/javascript">var submitted=false;</script>
 	</body>
 </html>
