@@ -342,3 +342,42 @@ p.footer-links > a {
 	text-decoration: none;
 	color: #0a0a0a;
 }
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.rowtab {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 5px 0;
+	width: 100%;
+}
+
+.label {
+	display: inline-block;
+	text-align: right;
+	width: 40%;
+	padding: 5px;
+	vertical-align: middle;
+	/* margin-top: 10px; */
+}
+
+.righttab {
+	display: inline-block;
+	text-align: left;
+	width: 40%;
+	vertical-align: middle;
+	padding: 0 10px;
+}
+
+.righttab > input {
+	height: 100%;
+	vertical-align: middle;
+	width: 100%;
+}
